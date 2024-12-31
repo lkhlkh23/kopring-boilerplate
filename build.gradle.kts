@@ -18,7 +18,13 @@ repositories {
 }
 
 dependencies {
+    // spring boot
     implementation("org.springframework.boot", "spring-boot-starter-web")
+
+    // swagger
+    implementation("org.springdoc", "springdoc-openapi-starter-webmvc-ui", "2.0.2")
+
+    // test
     testImplementation("org.junit.jupiter", "junit-jupiter", "5.10.2")
     testImplementation("org.assertj", "assertj-core", "3.25.3")
     testImplementation("io.kotest", "kotest-runner-junit5", "5.8.0")
