@@ -20,6 +20,12 @@ repositories {
 dependencies {
     // spring boot
     implementation("org.springframework.boot", "spring-boot-starter-web")
+    implementation("org.jetbrains.kotlin", "kotlin-reflect")
+
+    // db
+    implementation("org.springframework.boot", "spring-boot-starter-data-jpa")
+    implementation("mysql", "mysql-connector-java", "8.0.32")
+    implementation("com.h2database", "h2")
 
     // swagger
     implementation("org.springdoc", "springdoc-openapi-starter-webmvc-ui", "2.0.2")

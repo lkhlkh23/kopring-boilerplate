@@ -4,4 +4,17 @@ server:
 spring:
   application:
     name: kopring
-
+  datasource:
+    url: jdbc:h2:mem:coupon
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+    platform: h2
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
